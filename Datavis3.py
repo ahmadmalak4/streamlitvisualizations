@@ -26,7 +26,7 @@ John W . Tukey, Exploratory Data Analysis (1977)
 
 
 st.title("visualization of three graphs")
-df = pd.read_csv(r"C:\Users\ahmad malak\Desktop\seattle-weather.csv")
+df = pd.read_csv(r"seattle-weather.csv")
 st.dataframe(df)
 st.header("correlation between wind and Temp_max")
 
@@ -54,7 +54,7 @@ fig3 = px.line(df, x="date", y="temp_min", title='weather variations')
 st.plotly_chart(fig3)
 
 st.header("Table 2:  how the population, land area and med.age affects the world share of a country.")
-df2 = pd.read_csv(r"C:\Users\ahmad malak\Desktop\population.csv")
+df2 = pd.read_csv(r"population.csv")
 st.dataframe(df2)
 
 
